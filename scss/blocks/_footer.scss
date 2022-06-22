@@ -1,0 +1,172 @@
+.footer {
+    .bg-container {
+        background: $blasc;
+    }
+    
+    &__container {
+        display: flex;
+        align-items: center;
+        padding-top: 36px;
+        padding-bottom: 36px;
+    }
+    
+    &__logo-link {
+    }
+    
+    &__wrapper {
+        max-width: 945px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-left: 58px;
+    }
+    
+    &__navbar {
+    }
+    
+    &__list {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+    }
+    
+    &__item {
+    }
+    
+    &__item-link {
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 25px;
+        color: $Dim_Grey;
+
+        &:hover {
+            color: $yellov;
+        }
+    }
+    
+    &__right-list {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+    }
+    
+    &__right-item {
+    }
+
+    &__item-icon {
+        color: $yellov;
+
+        &:hover {
+            color: $Light_Grey;
+        }
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .footer {
+        .bg-container {
+        }
+        
+        &__container {
+        }
+        
+        &__logo-link {
+        }
+        
+        &__wrapper {
+        }
+        
+        &__navbar {
+        }
+        
+        &__list {
+        }
+        
+        &__item {
+        }
+        
+        &__item-link {
+        }
+        
+        &__right-list {
+        }
+        
+        &__right-item {
+        }
+    
+        &__item-icon {
+        }
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+    .footer {
+        .bg-container {
+        }
+        
+        &__container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 64px;
+            padding-bottom: 88px;
+        }
+        
+        &__logo-link {
+            margin-bottom: 41px;
+        }
+        
+        &__wrapper {
+            max-width: 120px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-left: 0;
+        }
+        
+        &__navbar {
+        }
+        
+        &__list {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 85px;
+        }
+        
+        &__item {
+        }
+        
+        &__item-link {
+            font-weight: 700;
+            font-size: 15px;
+            line-height: 25px;
+            color: $Dim_Grey;
+    
+            &:hover {
+                color: $yellov;
+            }
+        }
+        
+        &__right-list {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+        }
+        
+        &__right-item {
+        }
+    
+        &__item-icon {
+            color: $yellov;
+    
+            &:hover {
+                color: $Light_Grey;
+            }
+        }
+    }
+}

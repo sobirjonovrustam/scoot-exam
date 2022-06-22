@@ -1,0 +1,175 @@
+.telemetry {
+    
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 155px;
+    }
+    
+    &__left-wrapper {
+        max-width: 445px;
+        width: 100%;
+    }
+    
+    &__left-heading {
+        font-size: 48px;
+        line-height: 48px;
+        letter-spacing: -2.14286px;
+        color: $Dark_Navy;
+        margin-bottom: 24px;
+    }
+    
+    &__left-text {
+        font-size: 15px;
+        line-height: 25px;
+        color: $Dim_Grey;
+        margin-bottom: 40px;
+    }
+    
+    &__btn {
+    }
+    
+    &__right-wrapper {
+        border-radius: 50%;
+        box-shadow: 510px 0 0 0 $Light_Grey;
+        position: relative;
+
+        &::after {
+            content: "";
+            display: inline-block;
+            width: 741px; 
+            height: 151px;
+            background-image: url("./../images/arrow2.svg");
+            background-repeat: no-repeat;
+            background-size: contain;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    
+    &__img {
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .telemetry {
+    
+        &__container {
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            margin-bottom: 155px;
+        }
+        
+        &__left-wrapper {
+            max-width: 573px;
+            width: 100%;
+            text-align: center;
+        }
+        
+        &__left-heading {
+            font-size: 48px;
+            line-height: 48px;
+            letter-spacing: -2.14286px;
+            color: $Dark_Navy;
+            margin-bottom: 24px;
+        }
+        
+        &__left-text {
+            font-size: 15px;
+            line-height: 25px;
+            color: $Dim_Grey;
+            margin-bottom: 40px;
+        }
+        
+        &__btn {
+        }
+        
+        &__right-wrapper {
+            border-radius: 50%;
+            box-shadow: 510px 0 0 0 $Light_Grey;
+            position: relative;
+    
+            &::after {
+                content: "";
+                display: inline-block;
+                width: 734px; 
+                height: 130px;
+                background-image: url("./../images/arrow2.svg");
+                background-repeat: no-repeat;
+                background-size: contain;
+                position: absolute;
+                bottom: 56px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+        
+        &__img {
+            margin-bottom: 56px;
+        }
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .telemetry {
+    
+        &__container {
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            margin-bottom: 155px;
+        }
+        
+        &__left-wrapper {
+            max-width: 311px;
+            width: 100%;
+            text-align: center;
+        }
+        
+        &__left-heading {
+            font-size: 32px;
+            line-height: 32px;
+            letter-spacing: -2.14286px;
+            color: $Dark_Navy;
+            margin-bottom: 24px;
+        }
+        
+        &__left-text {
+            font-size: 15px;
+            line-height: 25px;
+            color: $Dim_Grey;
+            margin-bottom: 40px;
+        }
+        
+        &__btn {
+        }
+        
+        &__right-wrapper {
+            border-radius: 50%;
+            box-shadow: 0 0 0 0 $Light_Grey;
+            position: relative;
+    
+            &::after {
+                content: "";
+                display: inline-block;
+                width: 734px; 
+                height: 130px;
+                background-image: url("./../images/arrow2.svg");
+                background-repeat: no-repeat;
+                background-size: contain;
+                position: absolute;
+                bottom: 70px;
+                left: 50%;
+                transform: translateX(-20%);
+            }
+        }
+        
+        &__img {
+            margin-bottom: 56px;
+        }
+    }
+}

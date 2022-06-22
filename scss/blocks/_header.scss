@@ -1,0 +1,147 @@
+.header {
+    
+    &__container {
+        display: flex;
+        align-items: center;
+        padding-top: 21px;
+        padding-bottom: 22px;
+    }
+    
+    &__logo-link {
+    }
+    
+    &__wrapper {
+        max-width: 945px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-left: 58px;
+    }
+    
+    &__navbar {
+    }
+    
+    &__list {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+    }
+    
+    &__item {
+    }
+    
+    &__item-link {
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 25px;
+        color: $Dim_Grey;
+
+        &:hover {
+            color: $yellov;
+        }
+    }
+    
+    &__button {
+    }
+}
+
+.button {
+    max-width: 180px;
+    width: 100%;
+    text-align: center;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    color: $White;
+    background: $yellov;
+    padding: 14px 39px;
+
+    &:hover {
+        background: $White;
+        color: $yellov;
+        box-shadow: 0 0 0 2px $yellov;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .header {
+    
+        &__container {
+        }
+        
+        &__logo-link {
+        }
+        
+        &__wrapper {
+        }
+        
+        &__navbar {
+        }
+        
+        &__list {
+        }
+        
+        &__item {
+        }
+        
+        &__item-link {
+        }
+        
+        &__button {
+        }
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .header {
+    
+        &__container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+
+            &::before {
+                content: "";
+                display: inline-block;
+                width: 20px;
+                height: 16px;
+                background-image: url("./../images/burger.svg");
+                position: absolute;
+                top: 50%;
+                left: calc(50% - 50%);
+                transform: translateY(-50%);
+            }
+        }
+        
+        &__logo-link {
+        }
+        
+        &__wrapper {
+            display: none;
+            flex-direction: column;
+            
+        }
+        
+        &__navbar {
+        }
+        
+        &__list {
+        }
+        
+        &__item {
+        }
+        
+        &__item-link {
+        }
+        
+        &__button {
+        }
+
+        &__container--active {
+
+        }
+    }
+}

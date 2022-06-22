@@ -1,0 +1,294 @@
+.hero {
+    .bg-container {
+        width: 100%;
+        background-image: url("./../images/bg-image.jpg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    
+    &__container {
+        margin-bottom: 160px;
+    }
+    
+    &__container--active {
+    }
+    
+    &__wrapper {
+        max-width: 500px;
+        width: 100%;
+        @include bg-padding;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    
+    &__heading {
+        font-size: 56px;
+        line-height: 56px;
+        letter-spacing: -2.5px;
+        color: $White;
+    }
+    
+    &__text {
+        max-width: 405px;
+        width: 100%;
+        font-size: 15px;
+        line-height: 25px;
+        color: $White;
+        margin-left: 95px;
+        position: relative;
+
+        &::before {
+            content: "";
+            display: inline-block;
+            max-width: 203px;
+            width: 100%;
+            height: 16px;
+            background-image: url("./../images/Path.svg");
+            background-repeat: no-repeat;
+            background-size: contain;
+            position: absolute;
+            top: calc(50% + 8px);
+            right: 100%;
+            margin-right: 57px;
+        }
+
+        &::after {
+            content: "";
+            display: inline-block;
+            max-width: 452px;
+            width: 100%;
+            height: 151px;
+            background-image: url("./../images/arrow.svg");
+            background-repeat: no-repeat;
+            background-size: contain;
+            position: absolute;
+            top: calc(50% + 7px);
+            left: 100%;
+            margin-left: 40px;
+        }
+    }
+    
+    &__btn {
+        margin-left: 95px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .hero {
+        .bg-container {
+            width: 100%;
+            background-image: url("./../images/bg-image_tablet.jpg");
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+        
+        &__container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 0;
+
+            &::after {
+                content: "";
+                display: inline-block;
+                max-width: 452px;
+                width: 100%;
+                height: 137px;
+                background-image: url("./../images/arrow.svg");
+                background-repeat: no-repeat;
+                background-size: contain;
+                position: absolute;
+                top: 100%;
+                right: 50%;
+                margin-left: 0;
+            }
+        }
+        
+        &__wrapper {
+            max-width: 573px;
+            width: 100%;
+            padding-top: 137px;
+            padding-bottom: 217px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 24px;
+        }
+        
+        &__heading {
+            text-align: center;
+        }
+        
+        &__text {
+            max-width: 573px;
+            width: 100%;
+            text-align: center;
+            margin-left: 0;
+    
+            &::before {
+                display: none;
+            }
+    
+            &::after {
+                display: none;
+            }
+        }
+        
+        &__btn {
+            margin-left: 0;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .hero {
+        .bg-container {
+            width: 100%;
+            background-image: url("./../images/bg-image_mobile.jpg");
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+        
+        &__container {
+            margin-bottom: 120px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            &::after {
+                content: "";
+                display: inline-block;
+                max-width: 452px;
+                width: 100%;
+                height: 137px;
+                background-image: url("./../images/arrow.svg");
+                background-repeat: no-repeat;
+                background-size: contain;
+                position: absolute;
+                top: 100%;
+                right: 50%;
+                margin-left: 0;
+            }
+        }
+        
+        &__container--active {
+        }
+        
+        &__wrapper {
+            max-width: 311px;
+            width: 100%;
+            padding-top: 115px;
+            padding-bottom: 250px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 24px;
+        }
+        
+        &__heading {
+            font-size: 40px;
+            line-height: 40px;
+            letter-spacing: -2.5px;
+            color: $White;
+        }
+        
+        &__text {
+            max-width: 405px;
+            width: 100%;
+            font-size: 15px;
+            line-height: 25px;
+            color: $White;
+            margin-left: 0;
+            position: relative;
+    
+            &::before {
+                display: none;
+            }
+    
+            &::after {
+                display: none;
+            }
+        }
+        
+        &__btn {
+            margin-left: 0;
+        }
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .hero {
+        .bg-container {
+            width: 100%;
+            background-image: url("./../images/bg-image_mobile.jpg");
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+        
+        &__container {
+            margin-bottom: 120px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            &::after {
+                content: "";
+                display: inline-block;
+                max-width: 452px;
+                width: 100%;
+                height: 100px;
+                background-image: url("./../images/arrow.svg");
+                background-repeat: no-repeat;
+                background-size: contain;
+                position: absolute;
+                top: 100%;
+                right: 50%;
+                margin-left: 0;
+            }
+        }
+        
+        &__container--active {
+        }
+        
+        &__wrapper {
+            max-width: 311px;
+            width: 100%;
+            padding-top: 115px;
+            padding-bottom: 171px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 24px;
+        }
+        
+        &__heading {
+            font-size: 40px;
+            line-height: 40px;
+            letter-spacing: -2.5px;
+            color: $White;
+        }
+        
+        &__text {
+            max-width: 405px;
+            width: 100%;
+            font-size: 15px;
+            line-height: 25px;
+            color: $White;
+            margin-left: 0;
+            position: relative;
+    
+            &::before {
+                display: none;
+            }
+    
+            &::after {
+                display: none;
+            }
+        }
+        
+        &__btn {
+            margin-left: 0;
+        }
+    }
+}

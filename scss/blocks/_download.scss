@@ -1,0 +1,182 @@
+.download {
+    
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 102px;
+        padding-bottom: 102px;
+    }
+    
+    &__heading {
+        max-width: 415px;
+        width: 100%;
+        font-size: 48px;
+        line-height: 48px;
+        letter-spacing: -2.14286px;
+        color: $White;
+    }
+    
+    &__list {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+    }
+    
+    &__item {
+        background: $Light_Grey;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        padding: 8px 16px;
+    }
+    
+    &__item-wrapper {
+        margin-left: 12px;
+    }
+    
+    &__item-text {
+        font-weight: 700;
+        font-size: 10px;
+        line-height: 15px;
+        letter-spacing: -0.446429px;
+        color: $Dark_Navy;
+    }
+    
+    &__item-heading {
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: -0.892857px;
+        color: $Dark_Navy;
+    }
+
+    .bg-container-img {
+        background: $Dark_Navy;
+        background-image: url("./../../images/bg-download-img.svg");
+        background-repeat: no-repeat;
+        background-position: calc(50% + 330px) 135px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .download {
+    
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 62px;
+        padding-bottom: 62px;
+    }
+    
+    &__heading {
+        max-width: 457px;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    
+    &__list {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+    }
+    
+    &__item {
+        background: $Light_Grey;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        padding: 8px 16px;
+    }
+    
+    &__item-wrapper {
+        margin-left: 12px;
+    }
+    
+    &__item-text {
+        font-weight: 700;
+        font-size: 9px;
+        line-height: 15px;
+        letter-spacing: -0.446429px;
+        color: $Dark_Navy;
+    }
+    
+    &__item-heading {
+        font-size: 15px;
+        line-height: 24px;
+        letter-spacing: -0.892857px;
+        color: $Dark_Navy;
+    }
+    
+    .bg-container-img {
+        background: $Dark_Navy;
+        background-image: url("./../../images/bg-download-img.svg");
+        background-repeat: no-repeat;
+        background-position: calc(50% - 10px) 135px;
+    }
+}
+}
+
+@media only screen and (max-width: 500px) {
+    .download {
+    
+        &__container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 88px;
+            padding-bottom: 88px;
+        }
+        
+        &__heading {
+            max-width: 311px;
+            width: 100%;
+            font-size: 32px;
+            line-height: 32px;
+            letter-spacing: -2.14286px;
+            color: $White;
+            text-align: center;
+        }
+        
+        &__list {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+        }
+        
+        &__item {
+            background: $Light_Grey;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            padding: 8px 16px;
+        }
+        
+        &__item-wrapper {
+            margin-left: 12px;
+        }
+        
+        &__item-text {
+            font-weight: 700;
+            font-size: 8px;
+            line-height: 15px;
+            letter-spacing: -0.446429px;
+            color: $Dark_Navy;
+        }
+        
+        &__item-heading {
+            font-size: 10px;
+            line-height: 20px;
+            letter-spacing: -0.892857px;
+            color: $Dark_Navy;
+        }
+        
+        .bg-container-img {
+            background: $Dark_Navy;
+            background-image: url("./../../images/bg-download-img.svg");
+            background-repeat: no-repeat;
+            background-position: calc(50% + 330px) 135px;
+        }
+    }
+}
